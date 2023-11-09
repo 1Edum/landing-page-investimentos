@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=], initial-scale=1.0">
+        <!-- Js -->
+        <script src="/js/graficos.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="/js/navBar.js" defer></script>
+        <script src="/js/calculadora.js" defer></script>
+        <!-- Links para Gráficos -->
+
+        <!-- Css -->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!-- #region 
+        <button class="subir">
+
+        </button>
+    -->
+        <div
+            style="background: url(/img/fundo01.png); background-size: cover; ; width: 100%;">
+            <header>
+                <nav>
+                    <a class="logo" href="/">Tiger Codes</a>
+                    <div class="mobile-menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#investimentos">Investimentos</a></li>
+                        <li><a href="#calculadora">Calculadora</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                    <button>
+                        ENTRAR
+                    </button>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <!-- Banner -->
+                    <article class="banner">
+                        <div>
+                            <div class="inline">
+                                <h1>Planos</h1>
+                                <p>.</p>
+                            </div>
+                            <div class="inline">
+                                <h1>Resultados</h1>
+                                <p>.</p>
+                            </div>
+                            <div class="inline">
+                                <h1>Conquistas</h1>
+                                <p>.</p>
+                            </div>
+                            <div>
+                                <button>CRIAR CONTA</button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <section>
+                <div class="faixa-texto " id="investimentos">
+                    <h1>Investimentos Exclussivos</h1>
+                </div>
+                <article class="investimentos">
+                    <div class="investimentos-seguros">
+                        <div>
+                            <h2 class="nome">Os Mais Seguros</h2>
+                            <div class="inline">
+                                <div class="graficos">
+                                    <h1>Investimento 1</h1>
+                                    <canvas id="seguro-1"></canvas>
+                                    <div class="inline">
+                                        <h4>Nivel de Segurança <span>&#8902;&#8902;&#8902;&#8902;&#8902;</span></h4>
+                                        <button onclick="funcao()">
+                                            <a href="#calculadora">Simular</a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="graficos">
+                                    <h1>Investimento 2</h1>
+                                    <canvas id="seguro-2"></canvas>
+                                    <div class="inline">
+                                        <h4>Nivel de Segurança <span>&#8902;&#8902;&#8902;&#8902;&#8902;</span></h4>
+                                        <button onclick="funcao()">
+                                            <a href="#calculadora">Simular</a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="graficos">
+                                    <h1>Investimento 3</h1>
+                                    <canvas id="seguro-3"></canvas>
+                                    <div class="inline">
+                                        <h4>Nivel de Segurança <span>&#8902;&#8902;&#8902;&#8902;&#8902;</span></h4>
+                                        <button>Simular</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <h2 class="nome">Maior Rentabilidade</h2>
+                                <div class="inline">
+                                    <div class="graficos">
+                                        <h1>Investimento 1</h1>
+                                        <canvas id="rentabilidade-1"></canvas>
+                                        <div class="inline">
+                                            <h4>Nivel de Segurança <span>&#8902;&#8902;&#8902;</span></h4>
+                                            <button>Simular</button>
+                                        </div>
+                                    </div>
+                                    <div class="graficos">
+                                        <h1>Investimento 2</h1>
+                                        <canvas id="rentabilidade-2"></canvas>
+                                        <div class="inline">
+                                            <h4>Nivel de Segurança <span>&#8902;&#8902;</span></h4>
+                                            <button>Simular</button>
+                                        </div>
+                                    </div>
+                                    <div class="graficos">
+                                        <h1>Investimento 3</h1>
+                                        <canvas id="rentabilidade-3"></canvas>
+                                        <div class="inline">
+                                            <h4>Nivel de Segurança <span>&#8902;</span></h4>
+                                            <button>Simular</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="calculadora">
+                    <div class="faixa-texto" id="calculadora">
+                        <h1>Calculadora</h1>
+                    </div>
+
+                    <div class="inline">
+                        <h1>Escolha um dos Investimentos à cima</h1>
+                        <button>
+                            <a href="#investimentos">Aperte Aqui</a>
+                        </button>
+                    </div>
+                    <div class="container">
+                        <div class="calculadora">
+                            <div class="indentificacao inline">
+                                <p id="escolha_investimento">Investimento</p>
+                                <p id="rentabilidade">Rentabilidade:</p>
+                            </div>
+                            <div class="inline-form">
+                                <div class="formulario">
+                                    <label for="valor">Valor:</label>
+                                    <input type="number" id="numero" min="1" max="100" >
+                                </div>
+                                <div class="formulario">
+                                    <label for="valor">Tempo no Investimento (Dias)</label>
+                                    <input type="number" id="data" min="1" max="100" >
+                                </div>
+                            </div>
+                            <div class="inline-center">
+                                <input type="button" class="adicionar" value="Testar" onclick="add()" />
+                            </div>
+                            <div class="inline-center">
+                                <div class="inline">
+                                    <h1>Valor Final:</h1>
+                                    <h1 id="valorFinal"></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+            <footer>
+                <header>
+                    <nav>
+                        <a class="logo" href="/">Tiger Codes</a>
+                        <div class="mobile-menu">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                        <ul class="nav-list">
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#investimentos">Investimentos</a></li>
+                            <li><a href="#calculadora">Calculadora</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+
+                        &#copy Todos os Direitos Reservados
+                    </div>
+
+                </header>  
+            </footer>
+        </body>
+    </html>
