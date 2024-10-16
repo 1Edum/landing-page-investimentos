@@ -15,16 +15,6 @@ $cinza: #b3b3b3;
 html{
   scroll-behavior: smooth;
 }
-/* #region 
-
-button.subir{
-  background-color: #fff;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  
-}
-*/
 
 a {
   color: #fff;
@@ -152,7 +142,7 @@ div.faixa-texto {
   }
 }
 article.investimentos {
-  background: url(/img/fundo02.png);
+  background: url(img/fundo02.png);
 }
 .nome + .inline {
   display: flex;
@@ -277,16 +267,6 @@ div.container{
       font-size: 140%;
       ;
     }
-  }
-}
-footer{
-  background-color: $cor-principal;
-
-  div{
-    text-align: center;
-    color: $white;
-    font-size: 100%;
-    padding: 2% 0;
   }
 }
 

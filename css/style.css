@@ -12,16 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* #region 
-
-button.subir{
-  background-color: #fff;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-
-}
-*/
 a {
   color: #fff;
   text-decoration: none;
@@ -150,7 +140,7 @@ div.faixa-texto h1 {
 }
 
 article.investimentos {
-  background: url(/img/fundo02.png);
+  background: url(img/fundo02.png);
 }
 
 .nome + .inline {
